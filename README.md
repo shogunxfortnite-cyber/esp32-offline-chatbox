@@ -9,7 +9,7 @@ A high-capacity, rule-based offline conversational chatterbox built for the **Ha
 * **Dual-Output Interface:** Sends conversations back to your Serial Monitor while dynamically rendering text onto a physical 1.8" TFT screen.
 * **Smart Text Wrapping:** Automatically calculates characters per line to ensure text doesn't cut off the edges of the narrow display.
 * **N16R8 Optimized Array:** Stores hundreds of trigger keyword variations and randomized responses directly inside the 16MB program flash partition.
-* **iPad 10th Gen Compatible:** Designed to be wired, compiled, and flashed directly from a mobile USB-C environment.
+* **iPad 10th Gen Compatible:** Fully operational using standard serial terminals over a USB-C cable connection.
 
 ---
 
@@ -34,29 +34,9 @@ Connect your **1.8" TFT (ST7735 Driver)** to the **ESP32-S3** dev board using th
 
 ## 🛠️ Software & Library Requirements
 
-Before compiling the code, ensure the following core libraries are installed via the Arduino Library Manager or your project configuration file:
+Before compiling the code, ensure the following core libraries are installed via your Library Manager or configuration profile:
 * **Adafruit GFX Library**
 * **Adafruit ST7735 and ST7789 Library**
-
----
-
-## 📱 Flashing and Running via iPad (10th Gen)
-
-You don't need a traditional computer to compile or interact with this script! Follow these instructions:
-
-### 1. Connect the Hardware
-* Use a standard **USB-C to USB-C cable** to connect your iPad 10 directly into the **UART / COM port** of your ESP32-S3 board.
-* The onboard power light should activate immediately.
-
-### 2. Flash the Firmware
-* Open **Google Chrome** or a Web-Serial compatible environment on your iPad.
-* Head to the **[Adafruit Web Serial ESPTool](https://github.io)**.
-* Set your target Baud Rate to **115200**, tap **Connect**, select your ESP32-S3 from the device pop-up window, and load your compiled binary.
-
-### 3. Operate the Chatterbox
-* Open a Serial Console terminal window (e.g., using the Adafruit tool or the **Blink Shell** app on iOS).
-* Ensure your connection line ending is configured to send a newline character (`\n`).
-* Type phrases like `hello`, `hack club`, `error`, `up`, or numbers like `8` and hit enter. Watch the response trigger on both the text console and your desktop screen assembly.
 
 ---
 
