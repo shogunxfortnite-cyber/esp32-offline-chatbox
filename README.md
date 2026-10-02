@@ -1,46 +1,10 @@
-# 📟 ESP32-S3 Offline Chatterbox (Hack Club Crescent Track)
-
-A high-capacity, rule-based offline conversational chatterbox built for the **Hack Club Crescent** program. This project is engineered strictly under the **"No AI Models"** constraint, running completely locally on the bare silicon of an **ESP32-S3 (N16R8)** microcontroller and outputting responses simultaneously to a computer terminal and a **1.8" SPI TFT Display**.
-
----
-
-## 🚀 Project Features
-* **100% AI-Free Architecture:** Uses deterministic multi-keyword matrix parsing and string routing instead of resource-heavy neural networks.
-* **Dual-Output Interface:** Sends conversations back to your Serial Monitor while dynamically rendering text onto a physical 1.8" TFT screen.
-* **Smart Text Wrapping:** Automatically calculates characters per line to ensure text doesn't cut off the edges of the narrow display.
-* **N16R8 Optimized Array:** Stores hundreds of trigger keyword variations and randomized responses directly inside the 16MB program flash partition.
-* **iPad 10th Gen Compatible:** Fully operational using standard serial terminals over a USB-C cable connection.
-
----
-
-## 🔌 Hardware Wiring Guide
-
-Connect your **1.8" TFT (ST7735 Driver)** to the **ESP32-S3** dev board using the following pin map:
-
-| TFT Screen Pin | ESP32-S3 Pin | Purpose |
-| :--- | :--- | :--- |
-| **GND** | **GND** | Ground Common Rail |
-| **VCC / VDD** | **3V3** | Logic Power (3.3 Volts) |
-| **SCL / SCK / CLK**| **GPIO 12** | SPI Clock |
-| **SDA / MOSI / SDI**| **GPIO 11** | SPI Data Line |
-| **RES / RESET** | **GPIO 4** | Screen Reset Trigger |
-| **DC / RS / A0** | **GPIO 5** | Data / Command Line |
-| **CS** | **GPIO 6** | Chip Select |
-| **LEDA / BL / LITE**| **3V3** | Display Backlight Power |
-
-*Note: The Backlight pin (`LEDA`/`BL`) must be tied to a power source, or the screen panel will remain black.*
-
----
-
-## 🛠️ Software & Library Requirements
-
-Before compiling the code, ensure the following core libraries are installed via your Library Manager or configuration profile:
-* **Adafruit GFX Library**
-* **Adafruit ST7735 and ST7789 Library**
-
----
-
-## 📜 Code License & Submission
-Developed for **Hack Club Crescent**. Built by a teenage hacker, running on physical hardware, shipped to the global slack network ecosystem. 
-
-**"You ship, we ship."** 🚀
+# ESP32-S3 Offline Chatterbox (Hack Club Crescent Track)
+Meet the ESP32-S3 Offline Chatterbox, an AI-free, hardware-driven companion built for the Hack Club Crescent Track. Instead of relying on power-hungry, cloud-connected neural networks, this pocket-sized gadget relies completely on bare-silicon C++ array parsing to deliver instantaneous, offline responses. Everything runs locally inside the chip's massive 16MB program flash partition, giving it the capacity to store hundreds of custom response trees.
+Whether plugged into your computer terminal or hooked up straight to an iPad (10th Gen) via a standard USB-C cable, it streams live conversations simultaneously to your terminal window and a crisp 1.8" SPI TFT screen. Thanks to an integrated smart text-wrapping algorithm, it calculates pixel margins dynamically so your messages never clip or overflow the display edges. It is fast, fully transparent, and built to ship directly into the global Hack Club Slack network ecosystem.
+# All-in-One Hardware Bundle & Total Cost
+The total cost for the entire bundle is $25 USD on average (ranging between $20 and $31 depending on your supplier).
+• 1x ESP32-S3 Dev Board (N16R8 variant with 16MB Flash / 8MB PSRAM)
+• 1x 1.8" SPI TFT Display (ST7735 Driver, 128x160 resolution)
+• 1x USB-C to USB-C Data Cable (For iPad 10 / laptop connectivity)
+• 1x Solderless Breadboard (Half-size prototyping grid)
+• 1x Bundle of Jumper Wires (Male-to-Female lines)
