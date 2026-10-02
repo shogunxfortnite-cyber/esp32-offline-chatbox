@@ -6,6 +6,15 @@ This project bypasses heavy neural networks entirely, running 100% locally on th
 
 ---
 
+### 📺 Video Demo
+Check out the system parsing inputs and driving the dual-display hardware in real time:
+
+[![ESP32-S3 Chatterbox Demo](https://youtube.com)](https://youtu.be/DUuMElx43R8?si=kXrE2kzNuWOhgRdj "")
+
+*(Click the image above or use [this link](https://youtu.be/DUuMElx43R8?si=kXrE2kzNuWOhgRdj "") to watch the video demonstration)*
+
+---
+
 ### 🛠️ Hardware Requirements & Cost
 The total package costs roughly **\$25 USD** (\$20 – \$31 depending on your supplier):
 * **1x** ESP32-S3 Dev Board (N16R8 variant, 16MB Flash / 8MB PSRAM)
